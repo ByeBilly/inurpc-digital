@@ -1,0 +1,8 @@
+{
+  "name": "InurPC Digital - Automation & Digital Assets",
+  "description": "A high-conversion platform for InurPC Digital, featuring a white-label CRM SaaS and a digital product store for creators and SMBs.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
