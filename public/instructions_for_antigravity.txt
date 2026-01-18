@@ -1,0 +1,112 @@
+Project: INURPC.com Website Redesign + Positioning Upgrade
+
+Goal:
+Transform the existing INURPC.com site into a clear, compelling, premium presentation of our core offer:
+AI-powered receptionist + lead handling system for Australian small business, running on HighLevel/LC Phone infrastructure with human hand-off.
+
+NOTE we have white labelled high level to INURPC DIGITAL AI, so we do not want to be promoting high level we want to promote our own platform which is here app.inurpc.com
+
+Core Objectives:
+
+Clarify Value Proposition
+
+Position INURPC DIGITAL AI as an operational upgrade for small business communications.
+
+Messaging focus:
+
+AI Receptionist answers inbound calls
+
+Captures intent & caller details
+
+Routes to human where necessary (SMS, email, callback, or Zoom booking)
+
+Ensures no missed leads, no wasted calls
+
+Explain the Workflow
+Suggested simple flow diagram:
+Caller → AI Receptionist → (Data extraction) → Business owner notification → Human follow-up
+
+Notify paths:
+
+SMS summaries
+
+Email summaries
+
+Tasks
+
+Optional Zoom scheduling
+
+Pipeline tracking
+
+Target Audience
+
+Australian solopreneurs + micro businesses
+
+Tradies, health/wellness, local services, real estate, professional services
+
+Trust & Practicality
+
+Emphasise that this system is not a chatbot on a website but an actual phone receptionist replacement
+
+Works with an Australian virtual number
+
+Complies with call recording/transcription expectations
+
+Visual & UX Changes
+
+Mobile-first improvements
+
+Current hero image is:
+
+Oversized on mobile
+
+Does not scale responsively
+
+Please resize/replace hero graphic/frame so that:
+
+The main subject is visible on mobile without scrolling
+
+Typography remains above the fold
+
+No horizontal clipping
+
+Styling Direction
+
+Feel: modern, trustworthy, technology-forward, not gimmicky
+
+Color palette remains consistent with INURPC Digital (dark modern + clean accent)
+
+Typography: professional, not playful
+
+Copy Requirements
+
+Clear primary headline (e.g. “Never Miss a Client Call Again”)
+
+Subheadline explaining how AI receptionist + hand-off works
+
+Short benefits list (bullet points)
+
+Use cases by role/industry
+
+FAQ section (privacy, recording, compliance)
+
+CTA section: “Book a Demo” or “Get Connected”
+
+Autonomy
+
+You (Antigravity) are free to modify layout, visual framing, typography, iconography, and placement where it meaningfully upgrades UX clarity or conversion.
+
+If an AI receptionist “explainer graphic” or diagram makes sense, generate it.
+
+Outcome Standard:
+Produce a version of INURPC.com that:
+
+Loads and reads correctly on mobile
+
+Immediately communicates what we sell
+
+Differentiates from “website chatbots”
+
+Demonstrates a real business workflow
+
+Feels like a premium operational SaaS layer, not just a generic agency site
