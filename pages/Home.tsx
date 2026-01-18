@@ -3,29 +3,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import FeatureGrid from '../components/FeatureGrid';
-import ProductCard from '../components/ProductCard';
-import { PRODUCTS } from '../data/products';
 import { ArrowRight, Quote } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
     <div className="pb-20">
       <HeroSection />
-      
+
       {/* Social Proof Section */}
       <section className="py-20 bg-slate-950">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="flex flex-col items-center text-center p-8 bg-slate-900/40 rounded-3xl border border-white/5">
-             <div className="text-4xl font-black text-blue-500 mb-2">98%</div>
-             <p className="text-slate-400 font-medium">Lead response rate increase for our clinic clients using InurPC Platform.</p>
+            <div className="text-4xl font-black text-blue-500 mb-2">98%</div>
+            <p className="text-slate-400 font-medium">Lead response rate increase for our clinic clients using InurPC Platform.</p>
           </div>
           <div className="flex flex-col items-center text-center p-8 bg-slate-900/40 rounded-3xl border border-white/5">
-             <div className="text-4xl font-black text-blue-500 mb-2">$2.4M</div>
-             <p className="text-slate-400 font-medium">Revenue automated through InurPC Snapshots in the last 12 months.</p>
+            <div className="text-4xl font-black text-blue-500 mb-2">$2.4M</div>
+            <p className="text-slate-400 font-medium">Revenue automated through InurPC Snapshots in the last 12 months.</p>
           </div>
           <div className="flex flex-col items-center text-center p-8 bg-slate-900/40 rounded-3xl border border-white/5">
-             <div className="text-4xl font-black text-blue-500 mb-2">15k+</div>
-             <p className="text-slate-400 font-medium">Hours saved across our user base by eliminating manual follow-ups.</p>
+            <div className="text-4xl font-black text-blue-500 mb-2">15k+</div>
+            <p className="text-slate-400 font-medium">Hours saved across our user base by eliminating manual follow-ups.</p>
           </div>
         </div>
       </section>
@@ -67,27 +65,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Store Teaser */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-            <div>
-              <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 uppercase">Asset Store</h2>
-              <p className="text-slate-400 max-w-xl">Plug-and-play snapshots, prompt packs, and royalty-free MP3 packs for creators and business owners.</p>
-            </div>
-            <Link to="/digital-products" className="inline-flex items-center space-x-2 text-blue-500 font-bold hover:text-blue-400 transition-colors uppercase tracking-widest text-sm">
-              <span>View All Products</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {PRODUCTS.slice(0, 3).map((product) => (
-              <ProductCard key={product.slug} product={product} />
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials */}
       <section className="py-24 bg-blue-600 rounded-[3rem] mx-4 relative overflow-hidden">
@@ -95,27 +72,17 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4 text-center text-white relative z-10">
           <Quote className="w-16 h-16 mx-auto mb-8 opacity-20" />
           <h2 className="text-3xl md:text-5xl font-black mb-12 uppercase">Join 500+ High-Performance Businesses</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-             <div className="p-8 bg-white/10 rounded-3xl text-left border border-white/10 backdrop-blur-sm">
-               <p className="text-lg italic mb-6">"InurPC changed our clinic forever. We went from manual spreadsheets to a fully automated patient booking engine in under a week. The snapshot templates are gold."</p>
-               <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold">DR</div>
-                  <div>
-                    <div className="font-bold uppercase tracking-tight">Dr. Sarah Reynolds</div>
-                    <div className="text-white/60 text-xs">Aesthetic Clinic Owner</div>
-                  </div>
-               </div>
-             </div>
-             <div className="p-8 bg-white/10 rounded-3xl text-left border border-white/10 backdrop-blur-sm">
-               <p className="text-lg italic mb-6">"The MP3 packs for my YouTube channel are fantastic. High quality, royalty-free, and they actually sound modern. Highly recommend their digital asset store."</p>
-               <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold">MJ</div>
-                  <div>
-                    <div className="font-bold uppercase tracking-tight">Mark Jensen</div>
-                    <div className="text-white/60 text-xs">Content Creator (1M+ Subs)</div>
-                  </div>
-               </div>
-             </div>
+          <div className="max-w-2xl mx-auto">
+            <div className="p-8 bg-white/10 rounded-3xl text-left border border-white/10 backdrop-blur-sm">
+              <p className="text-lg italic mb-6">"InurPC changed our clinic forever. We went from manual spreadsheets to a fully automated patient booking engine in under a week. The snapshot templates are gold."</p>
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold">DR</div>
+                <div>
+                  <div className="font-bold uppercase tracking-tight">Dr. Sarah Reynolds</div>
+                  <div className="text-white/60 text-xs">Aesthetic Clinic Owner</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -47,9 +47,7 @@ const HeroSection: React.FC = () => {
             <span>Explore The Platform</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
-          <Link to="/digital-products" className="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all border border-white/5">
-            Browse Digital Assets
-          </Link>
+
         </div>
 
         <div className="mt-16 flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">

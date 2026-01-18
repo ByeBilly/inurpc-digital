@@ -20,7 +20,7 @@ const SiteHeader: React.FC = () => {
 
   const navLinks = [
     { name: 'Platform', href: '/platform', icon: Rocket },
-    { name: 'Store', href: '/digital-products', icon: ShoppingBag },
+
     { name: 'About', href: '/about', icon: Info },
     { name: 'Contact', href: '/contact', icon: Mail },
   ];
@@ -70,10 +70,7 @@ const SiteHeader: React.FC = () => {
                     <Layout className="w-4 h-4" />
                     <span>Dashboard</span>
                   </Link>
-                  <Link to="/my-products" onClick={() => setIsProfileOpen(false)} className="flex items-center space-x-3 px-4 py-2.5 text-sm text-slate-400 hover:text-white hover:bg-white/5 transition-all">
-                    <ShoppingBag className="w-4 h-4" />
-                    <span>My Assets</span>
-                  </Link>
+
                   <div className="h-px bg-white/5 my-1"></div>
                   <button onClick={handleLogout} className="w-full flex items-center space-x-3 px-4 py-2.5 text-sm text-rose-400 hover:text-rose-300 hover:bg-rose-500/5 transition-all">
                     <LogOut className="w-4 h-4" />

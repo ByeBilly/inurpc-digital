@@ -6,7 +6,7 @@ const SiteFooter: React.FC = () => {
   return (
     <footer className="bg-slate-950 border-t border-white/5 py-12 md:py-20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <Terminal className="w-6 h-6 text-blue-500" />
@@ -32,15 +32,7 @@ const SiteFooter: React.FC = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Store</h4>
-            <ul className="space-y-3 text-slate-400 text-sm">
-              <li><Link to="/digital-products" className="hover:text-blue-400 transition-colors">MP3 Song Packs</Link></li>
-              <li><Link to="/digital-products" className="hover:text-blue-400 transition-colors">Snapshot Templates</Link></li>
-              <li><Link to="/digital-products" className="hover:text-blue-400 transition-colors">Email Sequences</Link></li>
-              <li><Link to="/digital-products" className="hover:text-blue-400 transition-colors">AI Prompt Packs</Link></li>
-            </ul>
-          </div>
+
 
           <div>
             <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Legal</h4>
