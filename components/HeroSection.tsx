@@ -34,12 +34,12 @@ const HeroSection: React.FC = () => {
 
         {/* All White Heading as requested */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 tracking-tight leading-[1.1] uppercase">
-          Never Miss a <br className="hidden md:block" />
-          Client Call Again.
+          The Ultimate <br className="hidden md:block" />
+          Digital Ecosystem.
         </h1>
 
         <p className="max-w-2xl mx-auto text-slate-400 text-lg md:text-xl mb-10 leading-relaxed px-4">
-          Replace missed calls with revenue. Your AI Receptionist answers 24/7, qualifies leads, and books appointments while you work or sleep.
+          Everything your business needs, In Your PC. From AI Receptionists to complete market domination packages.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

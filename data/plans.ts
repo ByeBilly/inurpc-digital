@@ -2,54 +2,56 @@ import { PricingPlan } from '../types';
 
 export const PLATFORM_PLANS: PricingPlan[] = [
   {
-    id: 'launch',
-    name: 'Your best ever business decision',
-    tagline: 'Perfect for solos and early-stage startups.',
-    priceFrom: 297,
-    idealFor: 'Individual consultants and new local service providers.',
+    id: 'starter',
+    name: 'Business Starter',
+    tagline: 'Perfect for small businesses just getting started.',
+    priceFrom: 99,
+    idealFor: 'Solo Traders & Small Teams',
     features: [
-      'Core CRM & Lead Management',
       '2-Way SMS & Email Sync',
-      'Basic Automation Workflows',
-      'Single Landing Page Funnel',
-      'Unified Messaging Inbox',
-      'Mobile App Access'
+      'Unified Inbox',
+      'Basic Calendar Booking',
+      'Google My Business Integration',
+      'Missed Call Text Back',
+      'Standard Support'
     ],
-    ctaLabel: 'Start Launch'
+    ctaLabel: 'Start Growing',
+    highlighted: false
   },
   {
-    id: 'growth-engine',
-    name: 'Set the bar, be a gamechanger',
-    tagline: 'Our most popular choice for scaling businesses.',
-    priceFrom: 497,
-    idealFor: 'Established clinics, agencies, and e-commerce brands.',
+    id: 'growth',
+    name: 'Growth Engine',
+    tagline: 'Automate your sales and reputation management.',
+    priceFrom: 297,
+    idealFor: 'Growing Service Businesses',
     features: [
-      'Everything in Launch',
-      'Advanced Multi-step Automations',
-      'Unlimited Funnels & Landing Pages',
-      'Calendar & Appointment Booking',
-      'Reputation Management (Reviews)',
-      'A/B Split Testing Tools',
-      'Done-With-You Onboarding'
+      'Everything in Starter',
+      'AI Review Management',
+      'Advanced Workflows & Automation',
+      'Unlimited Funnels & Forms',
+      'Social Media Planner',
+      'Priority Support',
+      'Affiliate Manager'
     ],
-    ctaLabel: 'Upgrade to Growth',
+    ctaLabel: 'Scale Up',
+    highlighted: false
+  },
+  {
+    id: 'dominator',
+    name: 'The SEO Dominator',
+    tagline: 'Total market domination. Website, Content & AI.',
+    priceFrom: 19950,
+    idealFor: 'Businesses Ready to Rule',
+    features: [
+      'Complete Premium Website Build',
+      '6 Months Social Media Ads Managed',
+      'Monthly Podcast & Video Production',
+      'Full CRM Setup & Automations',
+      'AI Receptionist Army',
+      'Massive Local SEO Boost',
+      'Dedicated Account Manager'
+    ],
+    ctaLabel: 'Dominate Your Market',
     highlighted: true
-  },
-  {
-    id: 'scale-partner',
-    name: 'Node State',
-    tagline: 'Fully managed infrastructure for market leaders.',
-    priceFrom: 997,
-    idealFor: 'High-volume clinics, franchises, and course creators.',
-    features: [
-      'Everything in Growth Engine',
-      'Dedicated Strategy Consultant',
-      'Custom Snapshot Development',
-      'API Integrations & Webhooks',
-      'Enterprise Client Portals',
-      'Premium Support (4hr TAT)',
-      'Bi-weekly Optimization Audits'
-    ],
-    ctaLabel: 'Talk to an Expert'
   }
 ];

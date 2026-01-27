@@ -1,43 +1,43 @@
 
 import React from 'react';
-import { MessageSquare, Calendar, Globe, Star, Zap, BarChart3 } from 'lucide-react';
+import { Layout, Search, BarChart3, Bot, Video, Megaphone } from 'lucide-react';
 
 const FeatureGrid: React.FC = () => {
   const features = [
     {
-      title: 'Unified Communication',
-      description: 'Manage 2-way SMS, Email, and Social DMs in a single, high-speed unified inbox.',
-      icon: MessageSquare,
+      title: 'High-Impact Websites',
+      description: 'Stunning, high-conversion websites that dominate your local market. Built to sell.',
+      icon: Layout,
       color: 'text-blue-500'
     },
     {
-      title: 'Seamless Calendars',
-      description: 'Ditch the third-party apps. Our native booking system handles appointments and reminders.',
-      icon: Calendar,
+      title: 'SEO Dominance',
+      description: 'Be the first thing customers see. We optimize your "In Your PC" presence for maximum visibility.',
+      icon: Search,
       color: 'text-indigo-500'
     },
     {
-      title: 'High-Convert Funnels',
-      description: 'Drag-and-drop page builder designed for fast loading and maximum conversion rates.',
-      icon: Globe,
+      title: 'CRM & Automation',
+      description: 'A white-labelled high-level account to automate everything from social posts to client follow-ups.',
+      icon: BarChart3,
       color: 'text-cyan-500'
     },
     {
-      title: 'Reputation Engine',
-      description: 'Automatically solicit reviews from happy customers and boost your local SEO.',
-      icon: Star,
+      title: 'AI Receptionists',
+      description: 'Never miss a call. Our AI staff handles inquiries, bookings, and qualifications 24/7.',
+      icon: Bot,
       color: 'text-yellow-500'
     },
     {
-      title: 'Deep Automations',
-      description: 'Visual workflow builder that triggers actions based on user behavior 24/7.',
-      icon: Zap,
+      title: 'Content Engine',
+      description: 'We create monthly podcasts, videos, and news stories to position you as the industry authority.',
+      icon: Video,
       color: 'text-purple-500'
     },
     {
-      title: 'Sales Pipelines',
-      description: 'Visualize your entire sales process and never let another lead fall through the cracks.',
-      icon: BarChart3,
+      title: 'Social Amplification',
+      description: 'Automated social media posting and ad management to keep your brand top-of-mind.',
+      icon: Megaphone,
       color: 'text-green-500'
     }
   ];
@@ -45,8 +45,8 @@ const FeatureGrid: React.FC = () => {
   return (
     <section className="py-20 bg-slate-900/50">
       <div className="container mx-auto px-4 text-center mb-16">
-        <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white uppercase tracking-tight">THE INURPC DIGITAL AI EMPLOYEE PLATFORM</h2>
-        <p className="text-slate-400 max-w-xl mx-auto">One engine. Unlimited growth potential. Replaces 10+ expensive software subscriptions.</p>
+        <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-white uppercase tracking-tight">Everything In Your PC</h2>
+        <p className="text-slate-400 max-w-xl mx-auto">The complete digital ecosystem for your business. From websites to AI employees, we handle it all.</p>
       </div>
 
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
