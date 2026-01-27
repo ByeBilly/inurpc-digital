@@ -54,15 +54,15 @@ const MediaShowcase: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {assets.map((asset, index) => (
-                        <div key={index} className="group relative rounded-3xl overflow-hidden bg-slate-900 border border-white/10 aspect-[4/5] hover:border-purple-500/50 transition-all">
+                        <div key={index} className="group relative rounded-2xl overflow-hidden bg-slate-900 border border-white/10 aspect-[9/16] hover:border-purple-500/50 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-2">
                             {/* Media Container */}
                             <div className="absolute inset-0">
                                 {asset.type === 'video' ? (
                                     <video
                                         src={asset.src}
-                                        className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                                        className="w-full h-full object-cover"
                                         loop
                                         muted
                                         playsInline
@@ -72,21 +72,21 @@ const MediaShowcase: React.FC = () => {
                                     <img
                                         src={asset.src}
                                         alt={asset.title}
-                                        className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105"
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
                                 )}
                                 {/* Gradient Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
                             </div>
 
                             {/* Content */}
-                            <div className="absolute bottom-0 left-0 right-0 p-8">
-                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-white text-xs font-bold uppercase tracking-wider mb-4">
-                                    {asset.type === 'video' ? <PlayCircle size={14} className="text-purple-400" /> : <ImageIcon size={14} className="text-blue-400" />}
-                                    {asset.type === 'video' ? 'Video Content' : 'Social Graphic'}
+                            <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-white text-[10px] font-bold uppercase tracking-wider mb-3">
+                                    {asset.type === 'video' ? <PlayCircle size={12} className="text-purple-400" /> : <ImageIcon size={12} className="text-blue-400" />}
+                                    {asset.type === 'video' ? 'Reel' : 'Post'}
                                 </div>
-                                <h3 className="text-2xl font-bold text-white mb-2">{asset.title}</h3>
-                                <p className="text-slate-400 text-sm leading-relaxed">{asset.description}</p>
+                                <h3 className="text-xl font-bold text-white mb-1 leading-tight">{asset.title}</h3>
+                                <p className="text-slate-300 text-xs leading-relaxed line-clamp-2">{asset.description}</p>
                             </div>
                         </div>
                     ))}

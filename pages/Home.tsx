@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import FeatureGrid from '../components/FeatureGrid';
+import ServiceHighlights from '../components/ServiceHighlights';
 import PricingTable from '../components/PricingTable';
 import PodcastPlayer from '../components/PodcastPlayer';
 import MediaShowcase from '../components/MediaShowcase';
@@ -27,23 +28,26 @@ const Home: React.FC = () => {
     },
     {
       id: '2',
-      title: 'How AI is Changing Local SEO (Coming Soon)',
-      description: 'The future of search and how to stay ahead.',
-      duration: 'Coming Soon',
-      audioUrl: '#'
+      title: 'Scrubbing Biological Sludge',
+      description: 'The hidden health hazards in your AC and how to fix them.',
+      duration: '18:45',
+      audioUrl: '/Scrubbing_Biological_Sludge_From_Your_AC.m4a'
     },
     {
       id: '3',
-      title: 'Automating the Boring Stuff (Coming Soon)',
-      description: 'Save 20 hours a week with simple workflows.',
-      duration: 'Coming Soon',
-      audioUrl: '#'
+      title: 'Heatwaves & The Honest Tradie',
+      description: 'Surviving the Brisbane heat without getting ripped off.',
+      duration: '12:30',
+      audioUrl: '/Heatwaves,_AC_Sludge,_and_the_Honest_Tradie.m4a'
     }
   ];
 
   return (
     <div className="pb-20">
       <HeroSection />
+
+      {/* SERVICE HIGHLIGHTS - 3 COLUMN (WebAbility Style) */}
+      <ServiceHighlights />
 
       {/* FEATURE GRID - "Everything In Your PC" */}
       <FeatureGrid />
