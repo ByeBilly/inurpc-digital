@@ -34,3 +34,21 @@ InurPC Digital is a high-performance automation ecosystem tailored for the Austr
 - [x] Hero Logo frame locked to 350x180.
 - [x] Review system integrated and tested.
 - [x] White-Label terminology purged in favor of "Managed/Enterprise."
+
+## 6. Strategic Repositioning (The "SEO Dominator" & Content Engine)
+- **New Positioning**: Shifted focus to "Everything In Your PC" / "The Ultimate Digital Ecosystem".
+- **Major Package Added**: "The SEO Dominator" ($19,950) including website, CRM, AI Receptionist, and monthly content.
+- **New Components**:
+  - `PodcastPlayer.tsx`: Integrated functional audio player with playlist.
+  - `MediaShowcase.tsx`: Portfolio grid optimized for vertical (9:16) social media assets.
+  - `ServiceHighlights.tsx`: 3-Column bold layout (WebDesign, SEO, Digital) inspired by WebEasy.
+- **Partner Integration**: Added dedicated promo section for `receptionists.net.au`.
+- **Assets**: Integrated real examples of "Sludge" and "Heatwaves" podcasts, plus vertical campaign visuals.
+
+## 7. Pricing & Mobile App Expansion
+- **Pricing Restructure**: Split offerings into "Build Packages" (One-Time) and "Managed Services" (Monthly/MRR).
+  - **Builds**: $350 (Grant/Starter) & $850 (Professional).
+  - **Managed**: $195/mo, $500/mo, $1995/mo (SEO Dominator).
+- **App Ecosystem**: Added `AppShowcase.tsx` to promote Google Play Store presence (Client Portal, Admin Dashboard, Lead Connector).
+- **Status**: Code pushed. Pricing logic updated in `plans.ts` and `PricingTable.tsx`.
+

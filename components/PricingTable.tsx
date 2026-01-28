@@ -7,14 +7,18 @@ import { cn, formatCurrency } from '../lib/utils';
 
 const PricingTable: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="md:col-span-3 text-center mb-8">
+        <h3 className="text-2xl font-bold text-white uppercase tracking-tight">Managed Service Subscriptions</h3>
+        <p className="text-slate-400">Ongoing support, automation, and growth acceleration.</p>
+      </div>
       {PLATFORM_PLANS.map((plan) => (
-        <div 
-          key={plan.id} 
+        <div
+          key={plan.id}
           className={cn(
             "relative p-8 rounded-3xl border flex flex-col",
-            plan.highlighted 
-              ? "bg-slate-900 border-blue-500 ring-4 ring-blue-500/10" 
+            plan.highlighted
+              ? "bg-slate-900 border-blue-500 ring-4 ring-blue-500/10"
               : "bg-slate-950 border-white/5"
           )}
         >
@@ -23,7 +27,7 @@ const PricingTable: React.FC = () => {
               Most Popular
             </div>
           )}
-          
+
           <div className="mb-8">
             <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
             <p className="text-slate-400 text-sm">{plan.tagline}</p>
@@ -46,12 +50,12 @@ const PricingTable: React.FC = () => {
             ))}
           </div>
 
-          <Link 
-            to="/book-demo" 
+          <Link
+            to="/book-demo"
             className={cn(
               "w-full text-center py-4 rounded-xl font-bold transition-all",
-              plan.highlighted 
-                ? "bg-blue-600 hover:bg-blue-700 text-white" 
+              plan.highlighted
+                ? "bg-blue-600 hover:bg-blue-700 text-white"
                 : "bg-white/10 hover:bg-white/20 text-white"
             )}
           >

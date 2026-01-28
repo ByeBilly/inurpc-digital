@@ -5,6 +5,8 @@ import HeroSection from '../components/HeroSection';
 import FeatureGrid from '../components/FeatureGrid';
 import ServiceHighlights from '../components/ServiceHighlights';
 import PricingTable from '../components/PricingTable';
+import BuildPackages from '../components/BuildPackages';
+import AppShowcase from '../components/AppShowcase';
 import PodcastPlayer from '../components/PodcastPlayer';
 import MediaShowcase from '../components/MediaShowcase';
 import { ArrowRight, Quote, ExternalLink, CheckCircle2 } from 'lucide-react';
@@ -55,6 +57,9 @@ const Home: React.FC = () => {
       {/* MEDIA SHOWCASE - "Content Engine" */}
       <MediaShowcase />
 
+      {/* APP SHOWCASE - Google Play */}
+      <AppShowcase />
+
       {/* PODCAST SECTION */}
       <section className="py-24 container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
@@ -71,45 +76,17 @@ const Home: React.FC = () => {
         />
       </section>
 
-      {/* PARTNER PROMO - Receptionists.net.au */}
-      <section className="py-16 bg-gradient-to-r from-blue-900/20 to-indigo-900/20 border-y border-white/5">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="flex-1">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-wider mb-4 border border-blue-500/20">
-              <CheckCircle2 size={12} /> Trusted Partner
-            </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">Looking for dedicated overflow support?</h3>
-            <p className="text-slate-400 mb-6 max-w-xl">
-              Our partners at <span className="text-white font-semibold">receptionists.net.au</span> provide specialized live answering services compatible with our AI systems.
-              Perfect for businesses needing a human touch for specific scenarios.
-            </p>
-            <a
-              href="https://receptionists.net.au"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-white font-bold border-b-2 border-blue-500 hover:text-blue-400 transition-colors pb-1"
-            >
-              Visit Receptionists.net.au <ExternalLink size={16} />
-            </a>
-          </div>
-          {/* Visual Flair for partner */}
-          <div className="hidden md:flex items-center justify-center w-full md:w-1/3">
-            <div className="relative w-full aspect-video bg-slate-900 rounded-xl border border-white/10 flex items-center justify-center overflow-hidden">
-              <div className="absolute inset-0 bg-grid-white/[0.05]"></div>
-              <span className="text-slate-500 font-black text-2xl uppercase tracking-widest opacity-50">Partner Ad</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* BUILD PACKAGES (One-Time) */}
+      <BuildPackages />
 
-
-      {/* PRICING SECTION */}
+      {/* PRICING SECTION (Managed Subscriptions) */}
       <section className="py-24 container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight mb-4">Choose Your Weapon</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">Whether you need a simple starter kit or total market domination, we have the package.</p>
+          <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight mb-4">Partner With Us</h2>
+          <p className="text-slate-400 max-w-2xl mx-auto">Long-term growth partners get the best results. info@inurpc.com</p>
         </div>
         <PricingTable />
+
 
         {/* HVAC Demo Link Context */}
         <div className="mt-12 text-center">

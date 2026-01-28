@@ -1,55 +1,52 @@
-import { PricingPlan } from '../types';
+import { PricingPlan as Plan } from '../types';
 
-export const PLATFORM_PLANS: PricingPlan[] = [
+export const PLATFORM_PLANS: Plan[] = [
   {
     id: 'starter',
-    name: 'Business Starter',
-    tagline: 'Perfect for small businesses just getting started.',
-    priceFrom: 99,
-    idealFor: 'Solo Traders & Small Teams',
+    name: 'Starter Managed',
+    tagline: 'Essential maintenance & basics.',
+    priceFrom: 195,
+    idealFor: 'Small Local Business',
     features: [
-      '2-Way SMS & Email Sync',
-      'Unified Inbox',
-      'Basic Calendar Booking',
-      'Google My Business Integration',
-      'Missed Call Text Back',
-      'Standard Support'
+      'Managed Hosting & Security',
+      'Basic CRM Access',
+      'Monthly Content Update',
+      'Google Review Management',
+      'Email Support'
     ],
-    ctaLabel: 'Start Growing',
-    highlighted: false
+    ctaLabel: 'Start Managed Plan'
   },
   {
     id: 'growth',
-    name: 'Growth Engine',
-    tagline: 'Automate your sales and reputation management.',
-    priceFrom: 297,
-    idealFor: 'Growing Service Businesses',
+    name: 'Growth Managed',
+    tagline: 'Active growth & automation.',
+    priceFrom: 500,
+    idealFor: 'Growing Service Teams',
     features: [
-      'Everything in Starter',
-      'AI Review Management',
-      'Advanced Workflows & Automation',
-      'Unlimited Funnels & Forms',
-      'Social Media Planner',
-      'Priority Support',
-      'Affiliate Manager'
+      'Priority Hosting & Speed Opt.',
+      'Full CRM Management',
+      '2x Monthly Content Swaps',
+      'Social Media Automation Setup',
+      'Missed Call Text Back (AI)',
+      'Priority Phone Support'
     ],
-    ctaLabel: 'Scale Up',
-    highlighted: false
+    ctaLabel: 'Accelerate Growth',
+    highlighted: true
   },
   {
     id: 'dominator',
     name: 'The SEO Dominator',
-    tagline: 'Total market domination. Website, Content & AI.',
-    priceFrom: 19950,
-    idealFor: 'Businesses Ready to Rule',
+    tagline: 'Total market domination.',
+    priceFrom: 1995,
+    idealFor: 'Market Leaders',
     features: [
-      'Complete Premium Website Build',
-      '6 Months Social Media Ads Managed',
-      'Monthly Podcast & Video Production',
-      'Full CRM Setup & Automations',
-      'AI Receptionist Army',
-      'Massive Local SEO Boost',
-      'Dedicated Account Manager'
+      'Dedicated Account Manager',
+      'Weekly Content Production (Video/Graphic)',
+      'Aggressive Local SEO Campaign',
+      'Full "AI Employee" Customization',
+      'Cross-Platform Ad Management',
+      'Google Play Store App Maintenance',
+      '24/7 VIP Support Line'
     ],
     ctaLabel: 'Dominate Your Market',
     highlighted: true
